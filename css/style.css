@@ -211,7 +211,7 @@ a {
 /* Footer */
 .footer {
     background: url("../img/footer-bg.png");
-    background-size: 100%;
+    background-size: cover;
 }
 .live-chat img {
     width: 90px;
