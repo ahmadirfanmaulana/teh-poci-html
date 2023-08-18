@@ -47,10 +47,11 @@ a {
     color: inherit;
 }
 .btn {
+    font-weight: bold;
     font-size: 32px;
     display: inline-block;
     border-radius: 60px;
-    padding: 1rem;
+    padding: 1.3rem;
 }
 .btn-green {
     background: var(--etp-light-green);
@@ -74,6 +75,12 @@ a {
 }
 .text-yellow {
     color: var(--etp-yellow);
+}
+.custom-shadow {
+    box-shadow: 0 3px 10px 5px rgba(1, 103, 61, 0.12);
+}
+.section-title {
+    font-size: 68px;
 }
 
 /* Navbar */
@@ -106,13 +113,17 @@ a {
 .about-caption::before {
     content: '';
     position: absolute;
-    left: calc(50% - 500px);
+    left: calc(50% - 570px);
     top: 50%;
     transform: translateY(-70%);
     width: 56px;
     height: 58px;
     background: url("../img/star-1.png") no-repeat;
     background-size: contain;
+}
+.about-description {
+    font-size: 28px;
+    line-height: 1;
 }
 .about-video::before {
     content: '';
@@ -141,11 +152,12 @@ a {
 .service-caption {
     background: var(--etp-light-green);
     color: #FFF;
-    padding: 0.6rem 1.5rem;
+    padding: 1rem 1.5rem;
     border-radius: 4rem;
     font-weight: bold;
     position: relative;
     font-size: 24px;
+    line-height: 1.1;
 }
 .service-number {
     position: absolute;
@@ -162,6 +174,10 @@ a {
 }
 .services-content {
     border-radius: 60px;
+}
+.service-content-title {
+    font-size: 34px;
+    line-height: 1.1;
 }
 .service-content-caption {
     line-height: 1.5;
@@ -221,14 +237,23 @@ a {
     border-radius: 126px;
 }
 .package-price-item {
+    font-size: 20px;
     background: var(--etp-green);
     color: #FFF;
     border-radius: 20px;
+}
+.package-btn {
+    font-size: 32px;
+    line-height: 1;
 }
 
 /* Requirement */
 .requirement-item img {
     height: 123px;
+}
+.requirement-description {
+    font-size: 28px;
+    line-height: 1;
 }
 
 /* Products */
@@ -280,6 +305,10 @@ a {
 }
 
 /* Call to Action */
+.cta-title {
+    font-size: 54px;
+    line-height: 1;
+}
 .cta-wrap::before {
     content: '';
     position: absolute;
@@ -289,18 +318,18 @@ a {
     height: 484px;
     background: url("../img/cta-wall-left.png") no-repeat;
     background-size: contain;
-    transform: translateY(35%) translateX(calc(-50% - 650px));
+    transform: translateY(135px) translateX(calc(-50% - 650px));
 }
 .cta-wrap::after {
     content: '';
     position: absolute;
     right: 50%;
-    top: 20px;
+    top: 0;
     width: 351px;
     height: 474px;
     background: url("../img/cta-wall-right.png") no-repeat;
     background-size: contain;
-    transform: translateY(35%) translateX(calc(50% + 625px));
+    transform: translateY(160px) translateX(calc(50% + 625px));
 }
 
 /* Footer */
