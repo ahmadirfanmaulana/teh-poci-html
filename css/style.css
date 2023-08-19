@@ -354,7 +354,7 @@ a {
     animation-duration: 0.4s;
 }
 .product-wrap {
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
 }
 .rotate-left {
     transform: rotate(-10deg);
@@ -367,6 +367,10 @@ a {
 }
 .products-tab.active {
     display: grid;
+}
+.products-content {
+    width: 990px;
+    margin: 0 auto;
 }
 
 /* Call to Action */
