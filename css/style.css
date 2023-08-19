@@ -342,6 +342,8 @@ a {
 .product-item {
     border-radius: 20px;
     width: 250px;
+    font-weight: 600;
+    transition: .2s;
 }
 .product-item-wrap {
     opacity: 0;
@@ -371,6 +373,12 @@ a {
 .products-content {
     width: 990px;
     margin: 0 auto;
+}
+.product-item img {
+    transition: .2s;
+}
+.product-item:hover img {
+    transform: scale(1.4) translateY(-1.8rem) translateX(-0.3rem) rotate(-10deg);
 }
 
 /* Call to Action */
