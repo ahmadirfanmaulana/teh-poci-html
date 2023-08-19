@@ -212,14 +212,14 @@ a {
 }
 
 /* Package */
-.package-buttons {
+.package-tabs {
     width: 657px;
     height: 73px;
     border: 2px solid var(--etp-green);
     border-radius: 50px;
     position: relative;
 }
-.package-buttons a {
+.package-tabs a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -228,7 +228,7 @@ a {
     z-index: 2;
     transition: .2s;
 }
-.package-buttons::before {
+.package-tabs::before {
     position: absolute;
     content: '';
     left: 2px;
@@ -239,10 +239,10 @@ a {
     background: var(--etp-green);
     transition: .2s;
 }
-.package[data-active="package-tab-2"] .package-buttons::before {
+.package[data-active="package-tab-2"] .package-tabs::before {
     left: calc(50% + 2px);
 }
-.package[data-active="package-tab-1"] .package-buttons a:nth-child(1), .package[data-active="package-tab-2"] .package-buttons a:nth-child(2) {
+.package[data-active="package-tab-1"] .package-tabs a:nth-child(1), .package[data-active="package-tab-2"] .package-tabs a:nth-child(2) {
     color: #FFF;
 }
 .package-thumbnail {
@@ -331,11 +331,11 @@ a {
     background-size: contain;
     transform: translateY(80px);
 }
-.products-tab a {
+.products-tabs a {
     letter-spacing: 5px;
     padding-bottom: 1rem;
 }
-.products-tab .active {
+.products-tabs .active {
     font-weight: bold;
     border-bottom: 4px solid var(--etp-green);
 }
@@ -343,17 +343,30 @@ a {
     border-radius: 20px;
     width: 250px;
 }
+.product-item-wrap {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+.products-tab.active .product-item-wrap {
+    animation-name: fadeInUp;
+    animation-fill-mode: forwards;
+    animation-duration: 0.4s;
+}
 .product-wrap {
     grid-template-columns: repeat(3, auto);
 }
-.product-item:nth-child(2) {
+.rotate-left {
     transform: rotate(-10deg);
 }
-.product-item:nth-child(4) {
+.rotate-right {
     transform: rotate(10deg);
 }
-.product-item:nth-child(6) {
-    transform: rotate(-10deg);
+.products-tab {
+    display: none;
+}
+.products-tab.active {
+    display: grid;
 }
 
 /* Call to Action */

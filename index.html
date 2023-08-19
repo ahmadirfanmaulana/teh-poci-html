@@ -204,7 +204,22 @@
                     </div>
                 </div>
                 <div id="service-content-2" class="service-content-item bg-white shadow py-20 px-16">
-                    Service 2
+                    <div class="flex-1">
+                        <h2 class="service-content-title font-extrabold mb-8">
+                            Mulai bisnismu sekarang, <br> bisa balik modal dalam tiga bulan
+                        </h2>
+                        <p class="text-lg service-content-caption">
+                            Es Teh Poci adalah teh berkualitas yang dihasilkan dari perkebunan <br>
+                            sendiri dan diolah dengan pabrik berstandar Eropa milik <br>
+                            <span class="font-bold">PT Gunung Slamat</span>. Didirkan oleh keluarga Sosrodjojo pada tahun 1953,
+                            <br>
+                            Es Teh Poci merupakan bagian dari Rekso Group yang juga menaungi <br>
+                            Teh Botol Sosro
+                        </p>
+                    </div>
+                    <div style="flex: 0.8">
+                        <img src="./img/about-5.png" alt="About 5" class="w-full">
+                    </div>
                 </div>
                 <div id="service-content-3" class="service-content-item bg-white shadow py-20 px-16">
                     Service 3
@@ -229,7 +244,7 @@
         <div class="flex flex-col items-center text-center">
             <h2 class="section-title mb-4 font-extrabold">Paket Juaragan Es Teh Poci</h2>
 
-            <div class="package-buttons mb-8 mx-auto grid grid-cols-2 text-center">
+            <div class="package-tabs mb-8 mx-auto grid grid-cols-2 text-center">
                 <a href="#" class="package-btn text-3xl font-semibold" data-target="package-tab-1">PAKET REGULER</a>
                 <a href="#" class="package-btn text-3xl font-semibold" data-target="package-tab-2">PAKET HEMAT</a>
             </div>
@@ -395,49 +410,155 @@
 <!-- S: Products -->
 <section id="products" class="products py-6 relative">
     <div class="products-wrap container mx-auto">
-        <div class="products-tab py-6 flex justify-center text-2xl">
-            <a href="#" class="mx-6 active">ORIGINAL</a>
-            <a href="#" class="mx-6">FRUITY FLAVOUR</a>
-            <a href="#" class="mx-6">CREAMY FLAVOUR</a>
-            <a href="#" class="mx-6">MILK TEA FRUITY</a>
+        <div class="products-tabs py-6 flex justify-center text-2xl">
+            <a href="#" data-target="products-tab-1" class="mx-6 active">ORIGINAL</a>
+            <a href="#" data-target="products-tab-2" class="mx-6">FRUITY FLAVOUR</a>
+            <a href="#" data-target="products-tab-3" class="mx-6">CREAMY FLAVOUR</a>
+            <a href="#" data-target="products-tab-4" class="mx-6">MILK TEA FRUITY</a>
         </div>
         <div class="products-content py-6 mb-8">
-            <div class="product-wrap grid items-center justify-center text-center">
-                <div class="product-item bg-white p-6 mx-10 my-10">
-                    <img src="./img/product-1.png" alt="Lychee Iced Tea">
-                    <h3 class="text-xl">
-                        Lychee <br> Iced Tea
-                    </h3>
+            <div class="products-tab products-tab-1 product-wrap items-center justify-center text-center active">
+                <div class="product-item-wrap" style="animation-delay: 0s">
+                    <div class="product-item bg-white p-6 mx-10 my-10">
+                        <img src="./img/product-1.png" alt="Lychee Iced Tea">
+                        <h3 class="text-xl">
+                            Lychee <br> Iced Tea
+                        </h3>
+                    </div>
                 </div>
-                <div class="product-item bg-white p-6 mx-10 my-10">
-                    <img src="./img/product-2.png" alt="Lychee Iced Tea">
-                    <h3 class="text-xl">
-                        Blackcurrant <br> Iced Tea
-                    </h3>
+                <div class="product-item-wrap" style="animation-delay: 0.1s">
+                    <div class="product-item rotate-left bg-white p-6 mx-10 my-10">
+                        <img src="./img/product-2.png" alt="Lychee Iced Tea">
+                        <h3 class="text-xl">
+                            Blackcurrant <br> Iced Tea
+                        </h3>
+                    </div>
                 </div>
-                <div class="product-item bg-white p-6 mx-10 my-10">
-                    <img src="./img/product-3.png" alt="Lychee Iced Tea">
-                    <h3 class="text-xl">
-                        Honey Lemon <br> Iced Tea
-                    </h3>
+            </div>
+            <div class="products-tab products-tab-2 product-wrap items-center justify-center text-center">
+                <div class="product-item-wrap" style="animation-delay: 0s">
+                    <div class="product-item bg-white p-6 mx-10 my-10">
+                        <img src="./img/product-1.png" alt="Lychee Iced Tea">
+                        <h3 class="text-xl">
+                            Lychee <br> Iced Tea
+                        </h3>
+                    </div>
                 </div>
-                <div class="product-item bg-white p-6 mx-10 my-10">
-                    <img src="./img/product-4.png" alt="Lychee Iced Tea">
-                    <h3 class="text-xl">
-                        Apple <br> Iced Tea
-                    </h3>
+                <div class="product-item-wrap" style="animation-delay: 0.1s">
+                    <div class="product-item rotate-left bg-white p-6 mx-10 my-10">
+                        <img src="./img/product-2.png" alt="Lychee Iced Tea">
+                        <h3 class="text-xl">
+                            Blackcurrant <br> Iced Tea
+                        </h3>
+                    </div>
                 </div>
-                <div class="product-item bg-white p-6 mx-10 my-10">
-                    <img src="./img/product-5.png" alt="Lychee Iced Tea">
-                    <h3 class="text-xl">
-                        Mango <br> Iced Tea
-                    </h3>
+                <div class="product-item-wrap" style="animation-delay: 0.2s">
+                    <div class="product-item bg-white p-6 mx-10 my-10">
+                        <img src="./img/product-3.png" alt="Lychee Iced Tea">
+                        <h3 class="text-xl">
+                            Honey Lemon <br> Iced Tea
+                        </h3>
+                    </div>
                 </div>
-                <div class="product-item bg-white p-6 mx-10 my-10">
-                    <img src="./img/product-6.png" alt="Lychee Iced Tea">
-                    <h3 class="text-xl">
-                        Orange <br> Iced Tea
-                    </h3>
+                <div class="product-item-wrap" style="animation-delay: 0.3s">
+                    <div class="product-item rotate-right bg-white p-6 mx-10 my-10">
+                        <img src="./img/product-4.png" alt="Lychee Iced Tea">
+                        <h3 class="text-xl">
+                            Apple <br> Iced Tea
+                        </h3>
+                    </div>
+                </div>
+                <div class="product-item-wrap" style="animation-delay: 0.4s">
+                    <div class="product-item bg-white p-6 mx-10 my-10">
+                        <img src="./img/product-5.png" alt="Lychee Iced Tea">
+                        <h3 class="text-xl">
+                            Mango <br> Iced Tea
+                        </h3>
+                    </div>
+                </div>
+                <div class="product-item-wrap" style="animation-delay: 0.5s">
+                    <div class="product-item rotate-left bg-white p-6 mx-10 my-10">
+                        <img src="./img/product-6.png" alt="Lychee Iced Tea">
+                        <h3 class="text-xl">
+                            Orange <br> Iced Tea
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="products-tab products-tab-3 product-wrap items-center justify-center text-center">
+                <div class="product-item-wrap" style="animation-delay: 0s">
+                    <div class="product-item bg-white p-6 mx-10 my-10">
+                        <img src="./img/product-1.png" alt="Lychee Iced Tea">
+                        <h3 class="text-xl">
+                            Lychee <br> Iced Tea
+                        </h3>
+                    </div>
+                </div>
+                <div class="product-item-wrap" style="animation-delay: 0.1s">
+                    <div class="product-item rotate-left bg-white p-6 mx-10 my-10">
+                        <img src="./img/product-2.png" alt="Lychee Iced Tea">
+                        <h3 class="text-xl">
+                            Blackcurrant <br> Iced Tea
+                        </h3>
+                    </div>
+                </div>
+                <div class="product-item-wrap" style="animation-delay: 0.2s">
+                    <div class="product-item bg-white p-6 mx-10 my-10">
+                        <img src="./img/product-3.png" alt="Lychee Iced Tea">
+                        <h3 class="text-xl">
+                            Honey Lemon <br> Iced Tea
+                        </h3>
+                    </div>
+                </div>
+                <div class="product-item-wrap" style="animation-delay: 0.3s">
+                    <div class="product-item rotate-left bg-white p-6 mx-10 my-10">
+                        <img src="./img/product-4.png" alt="Lychee Iced Tea">
+                        <h3 class="text-xl">
+                            Apple <br> Iced Tea
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="products-tab products-tab-4 product-wrap items-center justify-center text-center">
+                <div class="product-item-wrap" style="animation-delay: 0s">
+                    <div class="product-item bg-white p-6 mx-10 my-10">
+                        <img src="./img/product-1.png" alt="Lychee Iced Tea">
+                        <h3 class="text-xl">
+                            Lychee <br> Iced Tea
+                        </h3>
+                    </div>
+                </div>
+                <div class="product-item-wrap" style="animation-delay: 0.1s">
+                    <div class="product-item rotate-right bg-white p-6 mx-10 my-10">
+                        <img src="./img/product-2.png" alt="Lychee Iced Tea">
+                        <h3 class="text-xl">
+                            Blackcurrant <br> Iced Tea
+                        </h3>
+                    </div>
+                </div>
+                <div class="product-item-wrap" style="animation-delay: 0.2s">
+                    <div class="product-item bg-white p-6 mx-10 my-10">
+                        <img src="./img/product-3.png" alt="Lychee Iced Tea">
+                        <h3 class="text-xl">
+                            Honey Lemon <br> Iced Tea
+                        </h3>
+                    </div>
+                </div>
+                <div class="product-item-wrap" style="animation-delay: 0.3s">
+                    <div class="product-item bg-white p-6 mx-10 my-10">
+                        <img src="./img/product-4.png" alt="Lychee Iced Tea">
+                        <h3 class="text-xl">
+                            Apple <br> Iced Tea
+                        </h3>
+                    </div>
+                </div>
+                <div class="product-item-wrap" style="animation-delay: 0.3s">
+                    <div class="product-item bg-white p-6 mx-10 my-10">
+                        <img src="./img/product-4.png" alt="Lychee Iced Tea">
+                        <h3 class="text-xl">
+                            Apple <br> Iced Tea
+                        </h3>
+                    </div>
                 </div>
             </div>
         </div>
@@ -523,6 +644,15 @@
         $('.package').attr('data-active', target)
         $(`.package-tab.active`).removeClass(['active', 'animate', 'tada'])
         $(`.${target}`).addClass(['active', 'animate', 'tada'])
+    })
+
+    $('.products-tabs a').click(function (e) {
+        e.preventDefault()
+        const target = $(this).data('target')
+        $('.products-tabs .active').removeClass('active')
+        $(this).addClass('active')
+        $(`.products-tab.active`).removeClass(['active'])
+        $(`.${target}`).addClass(['active'])
     })
 </script>
 
