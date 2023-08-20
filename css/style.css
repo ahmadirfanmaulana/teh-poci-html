@@ -13,24 +13,24 @@
 /* Load Fonts */
 @font-face {
     font-family: "Proxima Nova";
-    src: url("../fonts/proximanova-regular.otf");
+    src: url("../fonts/proximanova-regular.ttf");
     font-display: swap;
 }
 @font-face {
     font-family: "Proxima Nova";
-    src: url("../fonts/proximanova-semibold.otf");
+    src: url("../fonts/proximanova-semibold.ttf");
     font-weight: 600;
     font-display: swap;
 }
 @font-face {
     font-family: "Proxima Nova";
-    src: url("../fonts/proximanova-bold.otf");
+    src: url("../fonts/proximanova-bold.ttf");
     font-weight: 700;
     font-display: swap;
 }
 @font-face {
     font-family: "Proxima Nova";
-    src: url("../fonts/proximanova-extrabold.otf");
+    src: url("../fonts/proximanova-extrabold.ttf");
     font-weight: 900;
     font-display: swap;
 }
@@ -209,6 +209,15 @@ a {
 }
 .service-content-item.active {
     display: flex;
+}
+.service-content-table {
+    font-size: 18px;
+}
+.service-content-table-info {
+    border-radius: 10px;
+    border: 2px solid var(--etp-green);
+    display: inline-block;
+    font-size: 21px;
 }
 
 /* Package */
