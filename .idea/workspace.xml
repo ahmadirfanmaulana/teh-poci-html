@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="efc58ffc-8a33-4ca1-a590-efce80db4ae8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/fonts/proximanova-bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/proximanova-extrabold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/proximanova-medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/proximanova-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/proximanova-semibold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jquery.svg.pan.zoom.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/proximanova-bold.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/proximanova-extrabold.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/proximanova-regular.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/proximanova-semibold.otf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +44,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Applications/XAMPP/xamppfiles/htdocs/teh-poci/fonts",
+    "last_opened_file_path": "/Applications/XAMPP/xamppfiles/htdocs/teh-poci/js",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -63,6 +55,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js" />
       <recent name="$PROJECT_DIR$/fonts" />
       <recent name="$PROJECT_DIR$/img" />
     </key>
@@ -97,6 +90,7 @@
       <workItem from="1692282167719" duration="56000" />
       <workItem from="1692344364898" duration="22077000" />
       <workItem from="1692489186565" duration="2427000" />
+      <workItem from="1692528482696" duration="7687000" />
     </task>
     <servers />
   </component>

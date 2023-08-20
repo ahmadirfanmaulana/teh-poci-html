@@ -153,9 +153,16 @@ a {
     background: url("../img/star-right.png") no-repeat;
     background-size: contain;
 }
-
+table td {
+    line-height: 1.2;
+}
 
 /* Service */
+.services {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .service-caption {
     background: var(--etp-light-green);
     color: #FFF;
@@ -219,8 +226,41 @@ a {
     display: inline-block;
     font-size: 21px;
 }
+.service-content-info {
+    line-height: 1.2 !important;
+}
+.service-dot {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+.bg-green {
+    background: var(--etp-green);
+}
+.bg-red {
+    background: #EC202B;
+}
+.bg-yellow {
+    background: var(--etp-yellow);
+}
+.bg-blue {
+    background: #688CD3;
+}
+.bg-light-green {
+    background: var(--etp-light-green);
+}
+.bg-orange {
+    background: var(--etp-orange);
+}
+.regional-btn {
+    cursor: pointer;
+}
+.regional-btn:hover {
+    color: var(--etp-light-green);
+    transition: .2s;
+}
 
-/* Package */
+    /* Package */
 .package-tabs {
     width: 657px;
     height: 73px;
