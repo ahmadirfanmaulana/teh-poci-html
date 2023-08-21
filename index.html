@@ -90,7 +90,7 @@
             <div class="services-tab mb-20">
 
                 <div class="flex justify-center">
-                    <a href="#" class="service mx-4 text-center flex-1 flex flex-col items-center" data-target="#service-content-1">
+                    <a href="#" class="service mx-4 text-center flex-1 flex flex-col items-center active" data-target="#service-content-1">
                         <div class="service-image mb-4">
                             <svg width="102" height="130" viewBox="0 0 102 130" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M101.71 4.37823C87.3402 0.561305 50.8549 0 50.8549 0C50.8549 0 14.3696 0.561305 0 4.37823V8.75646C0 8.75646 1.57167 9.09327 4.60276 9.65458L6.2867 22.677C6.2867 22.677 6.39896 27.392 8.981 29.7495L10.7772 45.0173L18.1865 106.874C18.1865 106.874 18.6356 112.262 19.5337 112.936C20.4318 113.722 21.6667 114.395 21.6667 115.181C21.6667 115.967 21.6667 119.335 21.6667 119.335C21.6667 119.335 25.7081 129.214 50.8549 129.102C76.0017 129.214 80.0431 119.335 80.0431 119.335C80.0431 119.335 80.0431 115.967 80.0431 115.181C80.0431 114.395 81.278 113.722 82.1761 112.936C83.0742 112.15 83.5232 106.874 83.5232 106.874L90.9326 45.0173L92.7288 29.7495C95.3108 27.392 95.4231 22.677 95.4231 22.677L97.107 9.65458C100.138 9.09327 101.71 8.75646 101.71 8.75646V4.37823Z" fill="white"/>
@@ -129,7 +129,7 @@
                             <span class="service-number">3</span> Produk <br> Berkualitas
                         </div>
                     </a>
-                    <a href="#" class="service mx-4 text-center flex flex-col items-center active" style="flex: 1.2" data-target="#service-content-4">
+                    <a href="#" class="service mx-4 text-center flex flex-col items-center" style="flex: 1.2" data-target="#service-content-4">
                         <span class="service-image mb-4">
                             <svg width="103" height="130" viewBox="0 0 103 130" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M102.412 4.37823C88.0423 0.561305 51.557 0 51.557 0C51.557 0 15.0717 0.561305 0.702148 4.37823V8.75646C0.702148 8.75646 2.27382 9.09327 5.30491 9.65458L6.98885 22.677C6.98885 22.677 7.10111 27.392 9.68314 29.7495L11.4793 45.0173L18.8887 106.874C18.8887 106.874 19.3377 112.262 20.2358 112.936C21.1339 113.722 22.3688 114.395 22.3688 115.181C22.3688 115.967 22.3688 119.335 22.3688 119.335C22.3688 119.335 26.4102 129.214 51.557 129.102C76.7038 129.214 80.7453 119.335 80.7453 119.335C80.7453 119.335 80.7453 115.967 80.7453 115.181C80.7453 114.395 81.9802 113.722 82.8783 112.936C83.7764 112.15 84.2254 106.874 84.2254 106.874L91.6347 45.0173L93.4309 29.7495C96.013 27.392 96.1252 22.677 96.1252 22.677L97.8092 9.65458C100.84 9.09327 102.412 8.75646 102.412 8.75646V4.37823Z" fill="white"/>
@@ -172,7 +172,7 @@
             </div>
 
             <div class="services-content">
-                <div id="service-content-1" class="service-content-item bg-white shadow py-20 px-16 gap-16">
+                <div id="service-content-1" class="service-content-item bg-white shadow active py-20 px-16 gap-16">
                     <div class="flex-1">
                         <h2 class="service-content-title font-extrabold mb-8">
                             Dipercaya lebih dari 15 tahun <br>
@@ -342,7 +342,7 @@
                         <img src="./img/about-6.png" alt="About 6" class="w-full">
                     </div>
                 </div>
-                <div id="service-content-4" class="service-content-item bg-white shadow active overflow-hidden">
+                <div id="service-content-4" class="service-content-item bg-white shadow overflow-hidden">
                     <div class="flex-1">
                         <div class="py-20 px-16">
                             <h2 class="service-content-title font-extrabold mb-8">
@@ -1024,71 +1024,7 @@
 
 <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 <script src="./js/jquery.svg.pan.zoom.js"></script>
-<script>
-    $('.service').click(function (e) {
-        e.preventDefault()
-        $('.service').removeClass('active')
-        $(this).addClass('active')
-
-        $('.service-content-item.active').removeClass(['active', 'animate', 'fade-in-up'])
-        $($(this).data('target')).addClass(['active', 'animate', 'fade-in-up'])
-    })
-
-    $('.package-btn').click(function (e) {
-        e.preventDefault()
-        const target = $(this).data('target')
-        $('.package').attr('data-active', target)
-        $(`.package-tab.active`).removeClass(['active', 'animate', 'tada'])
-        $(`.${target}`).addClass(['active', 'animate', 'tada'])
-    })
-
-    $('.products-tabs a').click(function (e) {
-        e.preventDefault()
-        const target = $(this).data('target')
-        $('.products-tabs .active').removeClass('active')
-        $(this).addClass('active')
-        $(`.products-tab.active`).removeClass(['active'])
-        $(`.${target}`).addClass(['active'])
-    })
-
-    $('.product-item').hover(function () {
-        $(this).css({
-            background: $(this).data('color'),
-            color: '#FFF',
-        })
-    }, function () {
-        $(this).css({
-            background: '#FFF',
-            color: 'inherit'
-        })
-    })
-
-
-    const options = {
-        zoomFactor: 1.5,
-        maxZoom: 10,
-        events: {
-            doubleClick: false,
-            mouseWheel: false,
-            drag: false,
-        }
-    }
-    var svgPanZoom= $("#map").svgPanZoom(options)
-
-    $('.regional-btn').click(function (e) {
-        e.preventDefault()
-
-        $('html, body').animate({
-            scrollTop: $("#map").offset().top - 200
-        }, 0);
-
-        setTimeout(() => {
-            const viewbox = $(this).data('viewbox').split(' ')
-            svgPanZoom.setViewBox(...viewbox, 500)
-        }, 200)
-
-    })
-</script>
+<script src="./js/main.js"></script>
 
 </body>
 </html>
