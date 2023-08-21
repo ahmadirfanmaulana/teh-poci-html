@@ -112,6 +112,12 @@ a {
     transform: translateX(-50%);
     z-index: 99;
 }
+/*.container {*/
+/*    overflow: auto !important;*/
+/*}*/
+/*section {*/
+/*    overflow: hidden !important;*/
+/*}*/
 
 /* Hero */
 .hero {

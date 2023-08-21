@@ -44,6 +44,12 @@ const options = {
         doubleClick: false,
         mouseWheel: false,
         drag: false,
+    },
+    limits: { // the limits in which the image can be moved. If null or undefined will use the initialViewBox plus 15% in each direction
+        x: -4000,
+        y: -4000,
+        x2: 4000,
+        y2: 4000,
     }
 }
 var svgPanZoom= $("#map").svgPanZoom(options)
@@ -57,8 +63,11 @@ $('.regional-btn').click(function (e) {
 
     setTimeout(() => {
         const viewbox = $(this).data('viewbox').split(' ')
-        svgPanZoom.setViewBox(...viewbox, 500)
-    }, 200)
+        svgPanZoom.setViewBox(0, 0, 2077, 807, 800)
+        setTimeout(() => {
+            svgPanZoom.setViewBox(...viewbox, 500)
+        }, 700)
+    }, 300)
 
 })
 
