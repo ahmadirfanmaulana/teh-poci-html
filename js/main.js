@@ -5,6 +5,8 @@ $('.service').click(function (e) {
 
     $('.service-content-item.active').removeClass(['active', 'animate', 'fade-in-up'])
     $($(this).data('target')).addClass(['active', 'animate', 'fade-in-up'])
+
+    $('.large img').removeClass(['active', 'animate', 'tada'])
 })
 
 $('.package-btn').click(function (e) {
@@ -36,23 +38,7 @@ $('.product-item').hover(function () {
     })
 })
 
-
-const options = {
-    zoomFactor: 1.5,
-    maxZoom: 10,
-    events: {
-        doubleClick: false,
-        mouseWheel: false,
-        drag: false,
-    },
-    limits: { // the limits in which the image can be moved. If null or undefined will use the initialViewBox plus 15% in each direction
-        x: -4000,
-        y: -4000,
-        x2: 4000,
-        y2: 4000,
-    }
-}
-var svgPanZoom= $("#map").svgPanZoom(options)
+const map = $('#map')
 
 $('.regional-btn').click(function (e) {
     e.preventDefault()
@@ -62,21 +48,33 @@ $('.regional-btn').click(function (e) {
     }, 0);
 
     setTimeout(() => {
-        const viewbox = $(this).data('viewbox').split(' ')
-        svgPanZoom.setViewBox(0, 0, 2077, 807, 800)
+        const viewBox = $(this).data('viewbox').split(' ')
+        gsap.to(map, {
+            duration: 1,
+            attr: { viewBox: '0 0 2077 807' },
+            ease: "power3.inOut"
+        });
         setTimeout(() => {
-            svgPanZoom.setViewBox(...viewbox, 500)
-        }, 700)
+            gsap.to(map, {
+                duration: 1,
+                attr: { viewBox },
+                ease: "power3.inOut"
+            });
+        }, 900)
     }, 300)
 
 })
 
-const navbarOffsetY = $('.navbar').offset().top
-// $(window).scroll(function () {
-//     const scrollTop = $(window).scrollTop()
-//     if (scrollTop >= navbarOffsetY) {
-//         $('.navbar').addClass('navbar-sticky');
-//     } else {
-//         $('.navbar').removeClass('navbar-sticky');
-//     }
-// })
+$('.service-content-thumbnail:not(.large)').click(function () {
+    const img = $(this).find('img')
+    const imgSrc = img.attr('src')
+    const imgLarge = $(this).parent('.service-content-thumbnail-wrap').find('.large img')
+    const imgLargeSrc = imgLarge.attr('src')
+    imgLarge.attr('src', imgSrc)
+    img.attr('src', imgLargeSrc)
+
+    imgLarge.removeClass(['active', 'animate', 'tada'])
+    setTimeout(() => {
+        imgLarge.addClass(['active', 'animate', 'tada'])
+    }, 50)
+})
