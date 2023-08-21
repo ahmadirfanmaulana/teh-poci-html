@@ -61,3 +61,13 @@ $('.regional-btn').click(function (e) {
     }, 200)
 
 })
+
+const navbarOffsetY = $('.navbar').offset().top
+// $(window).scroll(function () {
+//     const scrollTop = $(window).scrollTop()
+//     if (scrollTop >= navbarOffsetY) {
+//         $('.navbar').addClass('navbar-sticky');
+//     } else {
+//         $('.navbar').removeClass('navbar-sticky');
+//     }
+// })

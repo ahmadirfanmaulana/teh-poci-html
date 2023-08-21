@@ -41,7 +41,7 @@
 }
 html, body {
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 body {
     margin: 0 auto;
@@ -95,9 +95,22 @@ a {
     width: 100%;
     background: url("../img/top.png") center top repeat-x;
 }
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background: var(--etp-darker-yellow);
+}
 .navbar a {
     margin: 0 1.6rem;
     letter-spacing: 5px;
+}
+.navbar-sticky {
+    position: fixed;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 99;
 }
 
 /* Hero */
