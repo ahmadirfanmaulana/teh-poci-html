@@ -106,7 +106,8 @@ a {
     letter-spacing: 5px;
 }
 .navbar .active {
-    font-weight: bold;
+    font-weight: 900;
+    transition: .1s;
 }
 .navbar-sticky {
     position: fixed;
