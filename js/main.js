@@ -94,3 +94,31 @@ $(window).scroll(function () {
         }
     })
 })
+
+$('#btn-faq').click(function (e) {
+    e.preventDefault()
+    $('html,body').css({
+        overflow: 'hidden',
+    })
+})
+
+$('.accordion-description').each(function (index, desc) {
+    $(desc).attr('data-height', $(desc).height())
+    $(desc).css({height: '0', overflow: 'hidden'})
+})
+
+$('.accordion-title').click(function (e) {
+    e.preventDefault()
+    const accordion = $(this).parents('.accordion')
+    accordion.toggleClass('active')
+    const desc = accordion.find('.accordion-description')
+    if (accordion.hasClass('active')) {
+        desc.css({
+            height: desc.data('height') + 'px',
+        })
+    } else {
+        desc.css({
+            height: 0,
+        })
+    }
+})

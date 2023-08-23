@@ -41,6 +41,7 @@
 }
 html, body {
     scroll-behavior: smooth;
+    /*overflow: hidden;*/
     /*overflow-x: hidden;*/
 }
 body {
@@ -48,6 +49,7 @@ body {
     background-color: var(--etp-darker-yellow);
     color: var(--etp-green);
     font-family: "Proxima Nova", sans-serif;
+    /*zoom: 0.8;*/
 }
 a {
     text-decoration: none;
@@ -88,6 +90,9 @@ a {
 }
 .section-title {
     font-size: 68px;
+}
+.section-subtitle {
+    font-size: 28px;
 }
 
 /* Navbar */
@@ -501,6 +506,48 @@ table td {
     font-size: 22px;
     font-weight: bold;
     transform: translateX(-2.7rem);
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    background: rgba(0,0,0,0.5);
+    overflow: auto;
+    display: none;
+}
+.modal-wrap {
+    max-width: 1200px;
+    width: 100%;
+    border-radius: 60px;
+    background: #FFF;
+}
+.accordion {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: calc(24px + 1rem) auto;
+    transition: .1s;
+}
+.accordion.active {
+    background: #F6F6F6;
+    border-radius: 10px;
+}
+.accordion-title {
+    cursor: pointer;
+    user-select: none;
+}
+.accordion-description {
+    transition: .2s;
+}
+.accordion .chevron {
+    transition: .2s;
+}
+.accordion.active .chevron {
+    transform: rotate(-180deg);
 }
 
 /* Animations */
