@@ -78,3 +78,19 @@ $('.service-content-thumbnail:not(.large)').click(function () {
         imgLarge.addClass(['active', 'animate', 'tada'])
     }, 50)
 })
+
+const sections = $('section');
+
+$(window).scroll(function () {
+    const scrollTop = $(window).scrollTop()
+
+    sections.each(function (index, section) {
+        const top = $(section).offset().top - 10
+        const height = $(section).height()
+        if (scrollTop >= top && scrollTop <= top + height) {
+            $(`.navbar a[href="#${ $(section).attr('id') }"]`).addClass('active')
+        } else {
+            $(`.navbar a[href="#${ $(section).attr('id') }"]`).removeClass('active')
+        }
+    })
+})

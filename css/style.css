@@ -105,6 +105,9 @@ a {
     margin: 0 1.6rem;
     letter-spacing: 5px;
 }
+.navbar .active {
+    font-weight: bold;
+}
 .navbar-sticky {
     position: fixed;
     left: 50%;
