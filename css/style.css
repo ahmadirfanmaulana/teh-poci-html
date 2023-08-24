@@ -13,24 +13,24 @@
 /* Load Fonts */
 @font-face {
     font-family: "Proxima Nova";
-    src: url("../fonts/proximanova-regular.ttf");
+    src: url("../fonts/ProximaNova-Regular.otf");
     font-display: swap;
 }
 @font-face {
     font-family: "Proxima Nova";
-    src: url("../fonts/proximanova-semibold.ttf");
+    src: url("../fonts/ProximaNova-Semibold.otf");
     font-weight: 600;
     font-display: swap;
 }
 @font-face {
     font-family: "Proxima Nova";
-    src: url("../fonts/proximanova-bold.ttf");
+    src: url("../fonts/ProximaNova-Bold.otf");
     font-weight: 700;
     font-display: swap;
 }
 @font-face {
     font-family: "Proxima Nova";
-    src: url("../fonts/proximanova-extrabold.ttf");
+    src: url("../fonts/ProximaNova-Extrabold.otf");
     font-weight: 900;
     font-display: swap;
 }
