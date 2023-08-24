@@ -119,6 +119,15 @@ $('#btn-faq').click(function (e) {
     $('#modal-faq').addClass('active')
 })
 
+$('.modal-btn').click(function (e) {
+    e.preventDefault()
+    $('html,body').css({
+        overflow: 'hidden',
+    })
+    const target = $(this).data('modal-target')
+    $(target).addClass('active')
+})
+
 $('.accordion-description').each(function (index, desc) {
     $(desc).attr('data-height', $(desc).height())
     setTimeout(() => {
@@ -151,7 +160,7 @@ $('.accordion-title').click(function (e) {
 
 $('.modal-close').click(function (e) {
     e.preventDefault()
-    $('#modal-faq').removeClass('active')
+    $(this).parents('.modal').removeClass('active')
     $('html,body').css({
         overflow: 'unset',
     })
