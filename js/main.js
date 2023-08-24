@@ -13,8 +13,10 @@ $('.package-btn').click(function (e) {
     e.preventDefault()
     const target = $(this).data('target')
     $('.package').attr('data-active', target)
-    $(`.package-tab.active`).removeClass(['active', 'animate', 'tada'])
-    $(`.${target}`).addClass(['active', 'animate', 'tada'])
+    $(`.package-tab.active`).removeClass(['active'])
+    $(`.package-tab.active:not(.no-animation)`).removeClass(['animate', 'tada'])
+    $(`.${target}`).addClass(['active'])
+    $(`.${target}:not(.no-animation)`).addClass(['animate', 'tada'])
 })
 
 $('.products-tabs a').click(function (e) {
