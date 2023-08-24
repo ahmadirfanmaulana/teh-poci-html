@@ -43,6 +43,9 @@ const map = $('#map')
 $('.regional-btn').click(function (e) {
     e.preventDefault()
 
+    const regionalBtn = $(this)
+    $('#badge-static').css({opacity: 0})
+
     $('html, body').animate({
         scrollTop: $("#map").offset().top - 200
     }, 0);
@@ -60,6 +63,11 @@ $('.regional-btn').click(function (e) {
                 attr: { viewBox },
                 ease: "power3.inOut"
             });
+            if (regionalBtn.find('h3:contains("DKI Jakarta")').length > 0) {
+                setTimeout(() => {
+                    $('#badge-static').css({opacity: 1})
+                }, 900)
+            }
         }, 900)
     }, 300)
 

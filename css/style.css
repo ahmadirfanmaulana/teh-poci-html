@@ -290,8 +290,12 @@ table td {
     color: var(--etp-light-green);
     transition: .2s;
 }
+#badge-static {
+    opacity: 0;
+    transition: .2s;
+}
 
-    /* Package */
+/* Package */
 .package-tabs {
     width: 657px;
     height: 73px;
