@@ -49,7 +49,6 @@ body {
     background-color: var(--etp-darker-yellow);
     color: var(--etp-green);
     font-family: "Proxima Nova", sans-serif;
-    /*zoom: 0.8;*/
 }
 a {
     text-decoration: none;
@@ -93,6 +92,9 @@ a {
 }
 .section-subtitle {
     font-size: 28px;
+}
+#content {
+    zoom: 0.8;
 }
 
 /* Navbar */
@@ -518,13 +520,22 @@ table td {
     z-index: 99;
     background: rgba(0,0,0,0.5);
     overflow: auto;
-    display: none;
+    padding: 5rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: .1s;
+}
+.modal.active {
+    opacity: 1;
+    pointer-events: unset;
 }
 .modal-wrap {
     max-width: 1200px;
     width: 100%;
     border-radius: 60px;
     background: #FFF;
+    zoom: 0.8;
+    margin: 0 auto;
 }
 .accordion {
     padding: 2rem;

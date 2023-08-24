@@ -100,11 +100,14 @@ $('#btn-faq').click(function (e) {
     $('html,body').css({
         overflow: 'hidden',
     })
+    $('#modal-faq').addClass('active')
 })
 
 $('.accordion-description').each(function (index, desc) {
     $(desc).attr('data-height', $(desc).height())
-    $(desc).css({height: '0', overflow: 'hidden'})
+    setTimeout(() => {
+        $(desc).css({height: '0', overflow: 'hidden'})
+    }, 100)
 })
 
 $('.accordion-title').click(function (e) {
