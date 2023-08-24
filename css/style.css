@@ -41,15 +41,12 @@
 }
 html, body {
     scroll-behavior: smooth;
-    /*overflow: hidden;*/
-    /*overflow-x: hidden;*/
 }
 body {
     margin: 0 auto;
     background-color: var(--etp-darker-yellow);
     color: var(--etp-green);
     font-family: "Proxima Nova", sans-serif;
-    /*zoom: 0.8;*/
 }
 a {
     text-decoration: none;

@@ -151,6 +151,6 @@ $('.modal-close').click(function (e) {
     e.preventDefault()
     $('#modal-faq').removeClass('active')
     $('html,body').css({
-        overflow: 'auto',
+        overflow: 'unset',
     })
 })
