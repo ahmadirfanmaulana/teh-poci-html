@@ -597,7 +597,7 @@ table td {
     left: 0;
     bottom: 0;
     width: 100%;
-    z-index: 99;
+    z-index: 9;
     padding: 2rem 0;
 }
 .cookies-confirm-wrap {
@@ -611,7 +611,6 @@ table td {
     font-size: 14px;
     border-radius: 6px;
     padding: 10px 50px;
-    font-size: 14px;
 }
 .cookies-confirm-description {
     color: #6E7191;
