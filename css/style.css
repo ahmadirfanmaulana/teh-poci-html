@@ -113,9 +113,12 @@ a {
     margin: 0 1.6rem;
     letter-spacing: 5px;
 }
+.navbar a:hover {
+    font-weight: 900;
+}
 .navbar .active {
     font-weight: 900;
-    transition: .1s;
+    /*transition: .1s;*/
 }
 .navbar-sticky {
     position: fixed;
