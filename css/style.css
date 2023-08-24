@@ -437,12 +437,12 @@ table td {
 .product-wrap {
     grid-template-columns: repeat(3, 1fr);
 }
-.rotate-left {
-    transform: rotate(-10deg);
-}
-.rotate-right {
-    transform: rotate(10deg);
-}
+/*.rotate-left {*/
+/*    transform: rotate(-10deg);*/
+/*}*/
+/*.rotate-right {*/
+/*    transform: rotate(10deg);*/
+/*}*/
 .products-tab {
     display: none;
 }
@@ -453,11 +453,20 @@ table td {
     width: 990px;
     margin: 0 auto;
 }
-.product-item img {
+.product-item {
     transition: .2s;
 }
+.product-item img {
+    transition: .2s;
+    height: 234px;
+    object-fit: contain;
+    object-position: center;
+}
+.product-item:hover {
+    transform: translateY(-1.8rem) translateX(-0.3rem) rotate(-10deg);
+}
 .product-item:hover img {
-    transform: scale(1.4) translateY(-1.8rem) translateX(-0.3rem) rotate(-10deg);
+    transform: scale(1.4) translateY(-1.8rem) translateX(-0.3rem);
 }
 
 /* Call to Action */
@@ -536,6 +545,12 @@ table td {
     background: #FFF;
     zoom: 0.8;
     margin: 0 auto;
+}
+.modal-close {
+    color: #FFF;
+    position: fixed;
+    right: 4rem;
+    top: 2rem;
 }
 .accordion {
     padding: 2rem;

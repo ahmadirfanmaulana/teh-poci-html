@@ -125,3 +125,8 @@ $('.accordion-title').click(function (e) {
         })
     }
 })
+
+$('.modal-close').click(function (e) {
+    e.preventDefault()
+    $('#modal-faq').removeClass('active')
+})
