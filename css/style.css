@@ -295,6 +295,9 @@ table td {
     color: var(--etp-light-green);
     transition: .2s;
 }
+#map-container {
+    background: #A9E0FF;
+}
 #badge-static {
     opacity: 0;
     transition: .2s;
@@ -587,6 +590,31 @@ table td {
     transform: rotate(-180deg);
 }
 
+/* Cookies Confirm */
+.cookies-confirm {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+    padding: 2rem 0;
+}
+.cookies-confirm-wrap {
+    width: 100%;
+    padding: 2rem 4rem;
+    background: #FFF;
+    box-shadow: 10px 10px 8px 0px rgba(0, 0, 0, 0.16);
+}
+.btn-cookies-confirm {
+    color: #FFF;
+    font-size: 14px;
+    border-radius: 6px;
+    padding: 10px 50px;
+}
+.cookies-confirm-description {
+    color: #6E7191;
+}
+
 /* Animations */
 .animate {
     -webkit-animation-duration: 1s;
@@ -739,4 +767,29 @@ table td {
 }
 .bounce {
     animation-name: bounce;
+}
+@-webkit-keyframes fadeOutDown {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+}
+@keyframes fadeOutDown {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+}
+.fade-out-down {
+    animation-name: fadeOutDown;
 }

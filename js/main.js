@@ -179,3 +179,8 @@ $('.modal-close').click(function (e) {
     })
 })
 
+$('.btn-cookies-confirm').click(function (e) {
+    e.preventDefault()
+    $('#cookies-confirm').addClass(['animate', 'fade-out-down'])
+})
+
