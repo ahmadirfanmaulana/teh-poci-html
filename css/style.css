@@ -557,9 +557,9 @@ table td {
 }
 .modal-close {
     color: #FFF;
-    position: fixed;
+    position: absolute;
     right: 4rem;
-    top: 2rem;
+    top: 4rem;
 }
 .accordion {
     padding: 2rem;

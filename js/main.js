@@ -120,6 +120,13 @@ $('.accordion-description').each(function (index, desc) {
 
 $('.accordion-title').click(function (e) {
     e.preventDefault()
+
+    const otherActive = $(this).parents('.accordion-wrap').find(`.accordion:not(#${ $(this).parents('.accordion').attr('id') })`)
+    otherActive.removeClass('active')
+    otherActive.find('.accordion-description').css({
+        height: 0,
+    })
+
     const accordion = $(this).parents('.accordion')
     accordion.toggleClass('active')
     const desc = accordion.find('.accordion-description')
