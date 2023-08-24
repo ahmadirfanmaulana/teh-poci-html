@@ -437,6 +437,7 @@ table td {
     width: 250px;
     font-weight: 600;
     transition: .2s;
+    box-shadow: 0px 6px 20px 0px #973C084D;
 }
 .product-item-wrap {
     opacity: 0;
