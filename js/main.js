@@ -101,6 +101,12 @@ $(window).scroll(function () {
             $(`.navbar a[href="#${ $(section).attr('id') }"]`).removeClass('active')
         }
     })
+
+    if (scrollTop >= 150) {
+        $('.navbar').addClass('on-sticky')
+    } else {
+        $('.navbar').removeClass('on-sticky')
+    }
 })
 
 $('#btn-faq').click(function (e) {
