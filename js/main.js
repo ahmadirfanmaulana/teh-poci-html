@@ -1,3 +1,51 @@
+$.ajax({
+    url: './img/map.svg',
+    method: 'GET',
+    success: function (resp) {
+        const map = $(resp).find("svg");
+
+        map.css({
+            width: '100%'
+        })
+        map.attr('viewBox', '189.76863525390627 283.6475140380861 1080.0400000000002 419.6399999999999')
+
+        $('#map-container').append(map)
+
+        $('.regional-btn').click(function (e) {
+            e.preventDefault()
+
+            const regionalBtn = $(this)
+            $('#badge-static').css({opacity: 0})
+
+            $('html, body').animate({
+                scrollTop: map.offset().top - 200
+            }, 0);
+
+            setTimeout(() => {
+                const viewBox = $(this).data('viewbox').split(' ')
+                gsap.to(map, {
+                    duration: 1,
+                    attr: { viewBox: '0 0 2077 807' },
+                    ease: "power3.inOut"
+                });
+                setTimeout(() => {
+                    gsap.to(map, {
+                        duration: 1,
+                        attr: { viewBox },
+                        ease: "power3.inOut"
+                    });
+                    if (regionalBtn.find('h3:contains("DKI Jakarta")').length > 0) {
+                        setTimeout(() => {
+                            $('#badge-static').css({opacity: 1})
+                        }, 900)
+                    }
+                }, 900)
+            }, 300)
+
+        })
+    }
+})
+
 $('.service').click(function (e) {
     e.preventDefault()
     $('.service').removeClass('active')
@@ -38,41 +86,6 @@ $('.product-item').hover(function () {
         background: '#FFF',
         color: 'inherit'
     })
-})
-
-const map = $('#map')
-
-$('.regional-btn').click(function (e) {
-    e.preventDefault()
-
-    const regionalBtn = $(this)
-    $('#badge-static').css({opacity: 0})
-
-    $('html, body').animate({
-        scrollTop: $("#map").offset().top - 200
-    }, 0);
-
-    setTimeout(() => {
-        const viewBox = $(this).data('viewbox').split(' ')
-        gsap.to(map, {
-            duration: 1,
-            attr: { viewBox: '0 0 2077 807' },
-            ease: "power3.inOut"
-        });
-        setTimeout(() => {
-            gsap.to(map, {
-                duration: 1,
-                attr: { viewBox },
-                ease: "power3.inOut"
-            });
-            if (regionalBtn.find('h3:contains("DKI Jakarta")').length > 0) {
-                setTimeout(() => {
-                    $('#badge-static').css({opacity: 1})
-                }, 900)
-            }
-        }, 900)
-    }, 300)
-
 })
 
 $('.service-content-thumbnail:not(.large)').click(function () {
@@ -165,3 +178,4 @@ $('.modal-close').click(function (e) {
         overflow: 'unset',
     })
 })
+
