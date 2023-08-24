@@ -602,7 +602,7 @@ table td {
 }
 .cookies-confirm-wrap {
     width: 100%;
-    padding: 2rem 4rem;
+    padding: 2rem 3rem;
     background: #FFF;
     box-shadow: 10px 10px 8px 0px rgba(0, 0, 0, 0.16);
 }
@@ -611,6 +611,7 @@ table td {
     font-size: 14px;
     border-radius: 6px;
     padding: 10px 50px;
+    font-size: 14px;
 }
 .cookies-confirm-description {
     color: #6E7191;
