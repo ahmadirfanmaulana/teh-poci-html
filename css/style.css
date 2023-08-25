@@ -295,6 +295,14 @@ table td {
     color: var(--etp-light-green);
     transition: .2s;
 }
+@media (min-width: 1024px) {
+    .service:nth-child(5) {
+        flex: 1.2;
+    }
+    .service:nth-child(6) {
+        flex: 0.8;
+    }
+}
 #map-container {
     background: #A9E0FF;
 }
@@ -465,7 +473,7 @@ table td {
     display: grid;
 }
 .products-content {
-    width: 990px;
+    max-width: 990px;
     margin: 0 auto;
 }
 .product-item {
@@ -798,4 +806,20 @@ table td {
 }
 .fade-out-down {
     animation-name: fadeOutDown;
+}
+
+
+@media (max-width: 1023px) {
+    .about-video::after, .about-video::before{
+        all: unset;
+    }
+    .products-wrap::after, .products-wrap::before {
+        all: unset;
+    }
+    .cta-wrap::after, .cta-wrap::before {
+        all: unset;
+    }
+    .product-wrap {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
