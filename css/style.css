@@ -517,6 +517,11 @@ table td {
     background: url("../img/footer-bg.png");
     background-size: cover;
 }
+.live-chat {
+    position: fixed;
+    right: 6rem;
+    bottom: 6rem;
+}
 .live-chat img {
     width: 90px;
     height: 90px;
