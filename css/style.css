@@ -68,7 +68,8 @@ a {
     color: #FFF;
 }
 .btn-cta {
-    width: 650px;
+    max-width: 650px;
+    width: 100%;
 }
 .header-social-media {
     position: absolute;
@@ -802,6 +803,9 @@ table td {
 
 
 @media (max-width: 1023px) {
+    body {
+        font-size: 12px;
+    }
     #content {
         zoom: 1;
     }
@@ -924,6 +928,66 @@ table td {
     }
     #map-container svg {
         height: 164px;
+    }
+
+
+    /* Package */
+    .package-tabs {
+        height: 57px;
+    }
+    .package-btn {
+        font-size: 16px;
+    }
+    .package-booth {
+        zoom: 0.7;
+    }
+    .package-list {
+        zoom: 0.5;
+    }
+    .package-price-item {
+        font-size: 10px;
+    }
+    .package-price-item {
+        border-radius: 8px;
+    }
+    .package-price {
+        border-radius: 60px;
+    }
+
+    /* Requirement */
+    .requirement-description {
+        font-size: 12px;
+    }
+    .requirement-item p {
+        font-size: 6px;
+    }
+    .requirement-item img{
+        height: 60px;
+    }
+
+    /* Product */
+    .products-tabs a {
+        padding-bottom: 0.5rem;
+    }
+    .products-tabs .active {
+        border-bottom-width: 2px;
+    }
+    .product-wrap {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .product-item {
+        width: auto;
+    }
+    .products-wrap::after {
+        content: none;
+    }
+
+    /* CTA */
+    .cta-title {
+        font-size: 17px;
+    }
+    .btn {
+        font-size: 12px;
     }
 
 }
