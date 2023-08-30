@@ -863,6 +863,11 @@ table td {
     #menu-checkbox:checked ~ .navbar {
         transform: translateX(0);
     }
+    .sidebar-logo {
+        position: absolute;
+        right: 1.5rem;
+        top: 1.5rem;
+    }
 
     /* About */
     .about-description {
