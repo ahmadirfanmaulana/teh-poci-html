@@ -184,3 +184,6 @@ $('.btn-cookies-confirm').click(function (e) {
     $('#cookies-confirm').addClass(['animate', 'fade-out-down'])
 })
 
+$('.navbar a').click(function () {
+    $('.menu-close').click() 
+})
