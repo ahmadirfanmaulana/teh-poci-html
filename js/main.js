@@ -96,10 +96,10 @@ $('.service-content-thumbnail:not(.large)').click(function () {
     imgLarge.attr('src', imgSrc)
     img.attr('src', imgLargeSrc)
 
-    imgLarge.removeClass(['active', 'animate', 'tada'])
-    setTimeout(() => {
-        imgLarge.addClass(['active', 'animate', 'tada'])
-    }, 50)
+    // imgLarge.removeClass(['active', 'animate', 'tada'])
+    // setTimeout(() => {
+    //     imgLarge.addClass(['active', 'animate', 'tada'])
+    // }, 50)
 })
 
 const sections = $('section');
