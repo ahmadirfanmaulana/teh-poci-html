@@ -814,6 +814,9 @@ table td {
     .section-title {
         font-size: 20px;
     }
+    .section-subtitle {
+        font-size: 12px;
+    }
 
     /* Top Frame */
     .top-frame {
@@ -995,6 +998,14 @@ table td {
     }
     .btn {
         font-size: 12px;
+    }
+
+    /* Modal */
+    .modal {
+        padding: 1rem;
+    }
+    .accordion {
+        padding: 1rem;
     }
 
 }
