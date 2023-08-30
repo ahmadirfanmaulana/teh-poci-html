@@ -993,3 +993,15 @@ table td {
     }
 
 }
+
+@media (max-width: 380px) {
+    .package-booth {
+        zoom: 0.55;
+    }
+    .package-list {
+        zoom: 0.4;
+    }
+    .product-item img {
+        height: 172px;
+    }
+}
