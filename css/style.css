@@ -880,6 +880,23 @@ table td {
     .about-video iframe {
         height: 173px;
     }
+    .about-caption::before {
+        left: calc(50% - 150px);
+        width: 14px;
+        height: 15px;
+    }
+    .about-video::before {
+        left: calc(50% - 199px);
+        top: -106px;
+        width: 61px;
+        height: 89px;
+    }
+    .about-video::after {
+        left: calc(50% + 139px);
+        top: -79px;
+        width: 48px;
+        height: 125px;
+    }
 
     /* Service */
     .service-caption {
@@ -895,7 +912,7 @@ table td {
         height: 16px;
     }
     .service-content-title {
-        font-size: 9px;
+        font-size: 17px;
     }
     .service-content-item {
         border-radius: 17px;
@@ -937,6 +954,12 @@ table td {
     #map-container svg {
         height: 164px;
     }
+    .service-content-item:nth-child(5).active {
+        display: grid;
+    }
+    .service-content-caption {
+        font-size: 9px;
+    }
 
 
     /* Package */
@@ -952,15 +975,22 @@ table td {
     .package-list {
         zoom: 0.5;
     }
-    .package-price-item {
-        font-size: 10px;
+    .package-price-label {
+        font-size: 8px;
     }
     .package-price-item {
-        border-radius: 8px;
+        font-size: 6px;
+        border-radius: 5px;
     }
-    .package-price {
-        border-radius: 60px;
-    }
+    /*.package-price-item {*/
+    /*    font-size: 10px;*/
+    /*}*/
+    /*.package-price-item {*/
+    /*    border-radius: 8px;*/
+    /*}*/
+    /*.package-price {*/
+    /*    border-radius: 60px;*/
+    /*}*/
 
     /* Requirement */
     .requirement-description {

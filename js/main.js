@@ -185,5 +185,5 @@ $('.btn-cookies-confirm').click(function (e) {
 })
 
 $('.navbar a').click(function () {
-    $('.menu-close').click() 
+    $('.menu-close').click()
 })
