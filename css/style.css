@@ -1018,6 +1018,9 @@ table td {
     /*}*/
     .package-price {
         border-radius: 15px;
+        flex-direction: column;
+        width: fit-content !important;
+        margin: auto !important;
     }
 
     /* Requirement */
