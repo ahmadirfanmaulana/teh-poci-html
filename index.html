@@ -29,6 +29,8 @@ di seluruh Indonesia sejak 2007 dan penjualan lebih dari 15.000.000++ juta cup p
     <link rel="preload" as="font">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="https://teh-poci.com/logo.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/swiper@10.2.0/swiper-bundle.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -92,10 +94,32 @@ di seluruh Indonesia sejak 2007 dan penjualan lebih dari 15.000.000++ juta cup p
     <!-- S: Hero -->
     <section id="hero" class="hero overflow-hidden">
         <div class="block lg:hidden">
-            <img src="./img/iPhone%2013/hero-1-sm.png" alt="Hero 1" class="w-full">
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/hero-bg-1-sm.png" alt="Hero 1" class="w-full">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/hero-bg-2-sm.png" alt="Hero 2" class="w-full">
+                    </div>
+                </div>
+            </div>
+
         </div>
         <div class="hidden lg:block">
-            <img src="./img/hero-1.png" alt="Hero 1" class="w-full">
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/hero-bg-1.png" alt="Hero 1" class="w-full">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/hero-bg-2.png" alt="Hero 2" class="w-full">
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
     <!-- S: Hero -->
@@ -1246,6 +1270,8 @@ di seluruh Indonesia sejak 2007 dan penjualan lebih dari 15.000.000++ juta cup p
 
 <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10.2.0/swiper-bundle.min.js"></script>
+<script src="./js/carousel-config.js"></script>
 <script src="./js/main.js"></script>
 
 </body>
