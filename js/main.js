@@ -187,3 +187,15 @@ $('.btn-cookies-confirm').click(function (e) {
 $('.navbar a').click(function () {
     $('.menu-close').click()
 })
+
+const packageThumbnail = $('.package-thumbnail')
+$(window).on('resize', function(){
+    resizePackageThumbnail()
+});
+
+function resizePackageThumbnail() {
+    packageThumbnail.css({
+        height: packageThumbnail.width() + 'px',
+    })
+}
+resizePackageThumbnail()
