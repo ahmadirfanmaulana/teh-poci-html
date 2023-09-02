@@ -1025,10 +1025,10 @@ table td {
 
     /* Requirement */
     .requirement-description {
-        font-size: 12px;
+        font-size: 14px;
     }
     .requirement-item p {
-        font-size: 8px;
+        font-size: 10px;
     }
     .requirement-item img{
         height: 60px;
@@ -1063,7 +1063,7 @@ table td {
 
     /* Footer */
     .footer-info {
-        font-size: 8px;
+        font-size: 10px;
     }
     .copyright {
         font-size: 6px;
