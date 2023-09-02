@@ -969,14 +969,11 @@ table td {
     .service-content-item:nth-child(5).active {
         display: grid;
     }
-    .service-content-caption {
-        font-size: 9px;
-    }
     #service-content-1 .service-content-title {
         font-size: 10px;
     }
     #service-content-1 .service-content-caption {
-        font-size: 6px;
+        font-size: 9px;
     }
     #service-content-2 .service-content-title {
         font-size: 12px;
