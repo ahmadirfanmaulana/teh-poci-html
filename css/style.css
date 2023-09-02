@@ -960,6 +960,15 @@ table td {
     .service-content-caption {
         font-size: 9px;
     }
+    #service-content-1 .service-content-title {
+        font-size: 10px;
+    }
+    #service-content-1 .service-content-caption {
+        font-size: 6px;
+    }
+    #service-content-2 .service-content-title {
+        font-size: 12px;
+    }
 
 
     /* Package */
@@ -997,7 +1006,7 @@ table td {
         font-size: 12px;
     }
     .requirement-item p {
-        font-size: 6px;
+        font-size: 8px;
     }
     .requirement-item img{
         height: 60px;
@@ -1028,6 +1037,17 @@ table td {
     }
     .btn {
         font-size: 12px;
+    }
+
+    /* Footer */
+    .footer-info {
+        font-size: 8px;
+    }
+    .copyright {
+        font-size: 6px;
+    }
+    .footer-logo {
+        width: 60px;
     }
 
     /* Modal */
