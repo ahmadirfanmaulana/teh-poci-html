@@ -527,6 +527,7 @@ table td {
     bottom: 6rem;
     filter: drop-shadow(0 3px 3px rgba(1, 102, 62, 0.1));
     z-index: 999;
+    cursor: pointer;
 }
 .live-chat img {
     width: 90px;
