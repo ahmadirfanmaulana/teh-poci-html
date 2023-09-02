@@ -1097,6 +1097,9 @@ table td {
         padding: 1rem;
     }
 
+    .mob-hidden {
+        diplay: none;
+    }
 }
 
 @media (max-width: 380px) {
