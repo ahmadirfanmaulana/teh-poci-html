@@ -987,14 +987,21 @@ table td {
     .package-btn {
         font-size: 16px;
     }
-    .package-booth {
-        zoom: 0.7;
+    .booth-info {
+        width: 79px;
+        height: 79px;
     }
-    .package-list {
-        /*zoom: 0.5;*/
+    .booth-info-title, .booth-info-size-label {
+        font-size: 7px;
+    }
+    .booth-info-size {
+        font-size: 10px;
     }
     .package-item {
         font-size: 8px;
+    }
+    .package-booth img {
+        width: 144px;
     }
     .package-thumbnail {
         width: 100%;
@@ -1093,12 +1100,6 @@ table td {
 }
 
 @media (max-width: 380px) {
-    .package-booth {
-        zoom: 0.55;
-    }
-    .package-list {
-        /*zoom: 0.4;*/
-    }
     .product-item img {
         height: 172px;
     }
