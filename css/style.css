@@ -840,10 +840,10 @@ table td {
         background: var(--etp-darker-yellow);
     }
     .header .logo {
-        width: 39px;
+        width: 57px;
     }
     .header-social-media img {
-        width: 15px;
+        width: 22px;
     }
     .header-hamburger {
         position: absolute;
@@ -940,9 +940,6 @@ table td {
     #service-content-2 .service-content-table {
         width: 100%;
     }
-    #service-content-2 .service-content-title {
-        text-align: center;
-    }
     .service-content-info {
         font-size: 12px;
     }
@@ -976,7 +973,7 @@ table td {
         font-size: 9px;
     }
     #service-content-2 .service-content-title {
-        font-size: 12px;
+        font-size: 17px;
     }
 
 
@@ -988,14 +985,14 @@ table td {
         font-size: 16px;
     }
     .booth-info {
-        width: 79px;
-        height: 79px;
+        width: 111px;
+        height: 111px;
     }
     .booth-info-title, .booth-info-size-label {
-        font-size: 7px;
+        font-size: 12px;
     }
     .booth-info-size {
-        font-size: 10px;
+        font-size: 12px;
     }
     .package-item {
         font-size: 8px;
@@ -1080,8 +1077,8 @@ table td {
         bottom: 2.5rem;
     }
     .live-chat img {
-        width: 23px;
-        height: 23px;
+        width: 26px;
+        height: 26px;
     }
     .live-chat-caption {
         font-size: 6px;
@@ -1098,7 +1095,7 @@ table td {
     }
 
     .mob-hidden {
-        diplay: none;
+        display: none;
     }
 }
 
