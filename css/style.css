@@ -913,6 +913,9 @@ table td {
         font-size: 14px;
         margin: 0.5rem 0;
     }
+    .navbar.on-sticky {
+        box-shadow: 0 0;
+    }
     #menu-checkbox:checked ~ .navbar {
         transform: translateX(0);
     }
