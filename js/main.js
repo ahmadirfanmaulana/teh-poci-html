@@ -198,13 +198,16 @@ $('.navbar a').click(function () {
 })
 
 const packageThumbnail = $('.package-thumbnail')
+const lastPackageThumbnail = $('.package-item:last-child .package-thumbnail')
 $(window).on('resize', function(){
     resizePackageThumbnail()
 });
 
+console.log(lastPackageThumbnail)
+
 function resizePackageThumbnail() {
     packageThumbnail.css({
-        height: packageThumbnail.width() + 'px',
+        height: lastPackageThumbnail.width() + 'px',
     })
 }
 resizePackageThumbnail()
