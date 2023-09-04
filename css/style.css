@@ -837,7 +837,20 @@ table td {
 .fade-out-down {
     animation-name: fadeOutDown;
 }
+@keyframes float {
+  from {
+    transform: rotate(0deg) translate3d(10px, 0, 0) rotate(0deg);
+    -webkit-transform: rotate(0deg) translate3d(10px, 0, 0) rotate(0deg);
+  }
 
+  to {
+    transform: rotate(360deg) translate3d(10px, 0, 0) rotate(-360deg);
+    -webkit-transform: rotate(360deg) translate3d(10px, 0, 0) rotate(-360deg);
+  }
+}
+.float-infinite {
+    animation: float 5s infinite linear;
+}
 
 @media (max-width: 1023px) {
     body {
