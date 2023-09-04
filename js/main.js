@@ -34,7 +34,7 @@ $.ajax({
                         attr: { viewBox },
                         ease: "power3.inOut"
                     });
-                    if (regionalBtn.find('h3:contains("DKI Jakarta")').length > 0) {
+                    if (regionalBtn.find('h3:contains("DKI Jakarta")').length > 0 || regionalBtn.find('h3:contains("Kantor Pusat")').length > 0) {
                         setTimeout(() => {
                             $('#badge-static').css({opacity: 1})
                         }, 900)
