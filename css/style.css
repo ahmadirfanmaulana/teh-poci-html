@@ -502,7 +502,7 @@ table td {
     height: 484px;
     background: url("../img/cta-wall-left.png") no-repeat;
     background-size: contain;
-    transform: translateY(135px) translateX(calc(-50% - 650px));
+    transform: translateY(158px) translateX(calc(-50% - 587px));
 }
 .cta-wrap::after {
     content: '';
@@ -514,6 +514,37 @@ table td {
     background: url("../img/cta-wall-right.png") no-repeat;
     background-size: contain;
     transform: translateY(160px) translateX(calc(50% + 625px));
+}
+
+.cta-floating-left {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 425px;
+    transform: translateY(135px) translateX(calc(-50% - 650px));
+}
+
+.cta-floating-right {
+    position: absolute;
+    right: 50%;
+    top: 0;
+    width: 351px;
+    transform: translateY(160px) translateX(calc(50% + 625px));
+}
+.cta-floating-left img, .cta-floating-right img {
+    width: 100%;
+    animation-name: floating;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.cta-floating-right img {
+    animation-delay: 0.8s;
+}
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }
 }
 
 /* Footer */
