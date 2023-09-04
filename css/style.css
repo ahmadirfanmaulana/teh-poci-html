@@ -1143,6 +1143,19 @@ table td {
     .accordion {
         padding: 1rem;
     }
+    .modal-wrap {
+        border-radius: 19px;
+    }
+    #modal-faq .section-title {
+        font-size: 34px;
+    }
+    #modal-faq .section-subtitle {
+        font-size: 14px;
+    }
+    .modal-close {
+        right: 1.25rem;
+        top: 1.25rem;
+    }
 
     .mob-hidden {
         display: none;
