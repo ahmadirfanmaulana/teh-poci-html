@@ -88,6 +88,15 @@ $('.product-item').hover(function () {
     })
 })
 
+$('body').click(function (e) {
+    if (!$(e.target).hasClass('product-item')) {
+        $('.product-item').css({
+            background: '#FFF',
+            color: 'inherit'
+        })
+    }
+})
+
 $('.service-content-thumbnail:not(.large)').click(function () {
     const img = $(this).find('img')
     const imgSrc = img.attr('src')
