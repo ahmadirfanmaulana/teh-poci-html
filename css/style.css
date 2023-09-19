@@ -231,6 +231,7 @@ table td {
 }
 .service-content-image {
     width: 100%;
+    border-radius: 10px;
 }
 .service.active .service-caption {
     background: var(--etp-green);
