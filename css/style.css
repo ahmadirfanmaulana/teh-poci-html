@@ -307,6 +307,29 @@ table td {
 }
 
 /* Package */
+.package-wrap::before {
+    content: '';
+    position: absolute;
+    left: calc(50% - 727px);
+    bottom: 0;
+    width: 372px;
+    height: 336px;
+    background: url("../img/products-wall-left.png") no-repeat;
+    background-size: contain;
+    transform: translateY(37%);
+    z-index: -1;
+}
+.package-wrap::after {
+    content: '';
+    position: absolute;
+    right: calc(50% - 660px);
+    bottom: 0;
+    width: 93px;
+    height: 91px;
+    background: url("../img/star-1.png") no-repeat;
+    background-size: contain;
+    transform: translateY(80px);
+}
 .package-tabs {
     width: 100%;
     max-width: 657px;
@@ -406,28 +429,6 @@ table td {
 }
 
 /* Products */
-.products-wrap::before {
-    content: '';
-    position: absolute;
-    left: calc(50% - 783px);
-    bottom: 0;
-    width: 372px;
-    height: 336px;
-    background: url("../img/products-wall-left.png") no-repeat;
-    background-size: contain;
-    transform: translateY(35%);
-}
-.products-wrap::after {
-    content: '';
-    position: absolute;
-    right: calc(50% - 660px);
-    bottom: 0;
-    width: 93px;
-    height: 91px;
-    background: url("../img/star-1.png") no-repeat;
-    background-size: contain;
-    transform: translateY(80px);
-}
 .products-tabs a {
     letter-spacing: 5px;
     padding-bottom: 1rem;
