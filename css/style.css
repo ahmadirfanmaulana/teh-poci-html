@@ -1079,6 +1079,9 @@ table td {
         width: fit-content !important;
         margin: auto !important;
     }
+    .package-wrap::after {
+        all: unset;
+    }
 
     /* Requirement */
     .requirement-description {
@@ -1123,7 +1126,7 @@ table td {
 
     /* Footer */
     .footer-info {
-        font-size: 10px;
+        font-size: 8px;
     }
     .copyright {
         font-size: 6px;
@@ -1132,17 +1135,28 @@ table td {
         width: 60px;
     }
     .live-chat {
-        right: 0.2rem;
-        bottom: 2.5rem;
+        right: 1.2rem;
+        bottom: 1.5rem;
+        flex-direction: column;
+        justify-content: center;
     }
     .live-chat img {
-        width: 26px;
-        height: 26px;
+        width: 37px;
+        height: 37px;
+        transform: translateY(4px);
     }
     .live-chat-caption {
-        font-size: 6px;
-        transform: translateX(-19px);
-        padding: 4px 8px 4px calc(8px + 16px);
+        font-size: 10px;
+        padding: 0;
+        transform: translateX(0);
+        text-align: center;
+        width: 89px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        line-height: 1.2;
     }
 
     /* Modal */
