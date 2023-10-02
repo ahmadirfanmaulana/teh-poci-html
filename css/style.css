@@ -227,10 +227,11 @@ table td {
     border-radius: 50%;
 }
 .service-content-title {
-    font-size: 34px;
+    font-size: 37px;
     line-height: 1.1;
 }
 .service-content-caption {
+    font-size: 21px !important;
     line-height: 1.5;
 }
 .service-content-thumbnail:first-child {
@@ -980,7 +981,7 @@ table td {
         border-radius: 17px;
     }
     .service-content-caption, .service-content-table, .service-content-table-info {
-        font-size: 10px;
+        font-size: 10px !important;
     }
     .service-content-table-info {
         border-radius: 3px;
